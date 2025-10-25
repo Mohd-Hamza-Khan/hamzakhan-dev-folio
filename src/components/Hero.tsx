@@ -2,6 +2,7 @@ import * as React from "react";
 import { ArrowDown, Github, Linkedin, Mail, FileDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
+import linkedinDp from "@/assets/linkedin-dp.jpg";
 
 export const Hero: React.FC = () => {
   return (
@@ -25,22 +26,26 @@ export const Hero: React.FC = () => {
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center animate-fade-in-up">
           <div className="mb-6 inline-block">
-            <div className="w-32 h-32 mx-auto rounded-full bg-accent/20 backdrop-blur-sm p-1 shadow-accent">
+            <div className="w-64 h-64 mx-auto rounded-full bg-accent/20 backdrop-blur-sm p-1 shadow-accent">
               <div className="w-full h-full rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center text-primary-foreground text-4xl font-bold">
-                MHK
+                <img
+                  src={linkedinDp}
+                  alt="Profile picture of Mohd Hamza Khan"
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
             </div>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4">
             Mohd Hamza Khan
           </h1>
 
-          <p className="text-xl sm:text-2xl md:text-3xl text-primary-foreground/90 mb-6 font-light">
+          <p className="text-xl sm:text-2xl md:text-3xl text-white mb-6 font-light">
             Full-Stack Developer | Data Analyst | ML Engineer
           </p>
 
-          <p className="text-base sm:text-lg text-primary-foreground/80 max-w-2xl mx-auto mb-8 leading-relaxed">
+          <p className="text-base sm:text-lg text-foreground/80 max-w-2xl mx-auto mb-8 leading-relaxed">
             Transforming ideas into scalable solutions through innovative development,
             data-driven insights, and cutting-edge machine learning applications.
           </p>

@@ -16,7 +16,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-accent">MHK</h3>
+            <h3 className="text-2xl font-bold mb-4 text-accent">MOHD HAMZA KHAN</h3>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Full-Stack Developer, Data Analyst, and ML Engineer passionate about
               building innovative solutions that make a difference.
@@ -24,7 +24,7 @@ export function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="text-center">
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {navItems.map((item) => (
@@ -46,7 +46,7 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Connect</h4>
             <div className="flex gap-3">
               <a
-                href="https://github.com"
+                href="https://github.com/mohd-hamza-khan"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -55,7 +55,7 @@ export function Footer() {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/mohd-hamza-khan"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -64,7 +64,7 @@ export function Footer() {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="mailto:hamza@example.com"
+                href="mailto:hamzacse@gmial.com"
                 aria-label="Email"
                 className="inline-flex items-center justify-center p-2 rounded-md text-primary-foreground hover:text-accent hover:bg-primary-foreground/10 transition-smooth hover:scale-110"
               >

@@ -118,10 +118,10 @@ export function Contact() {
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
                   <a
-                    href="mailto:hamza@example.com"
+                    href="mailto:hamzacse@gmail.com"
                     className="text-muted-foreground hover:text-accent transition-smooth"
                   >
-                    hamza@example.com
+                    hamzacse@gmail.com
                   </a>
                 </div>
               </div>
@@ -135,12 +135,12 @@ export function Contact() {
                 <div>
                   <h3 className="font-semibold mb-1">LinkedIn</h3>
                   <a
-                    href="https://linkedin.com"
+                    href="https://linkedin.com/in/mohd-hamza-khan"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-accent transition-smooth"
                   >
-                    linkedin.com/in/mohdhamzakhan
+                    linkedin.com/in/mohd-hamza-khan
                   </a>
                 </div>
               </div>
@@ -154,12 +154,12 @@ export function Contact() {
                 <div>
                   <h3 className="font-semibold mb-1">GitHub</h3>
                   <a
-                    href="https://github.com"
+                    href="https://github.com/mohd-hamza-khan"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-accent transition-smooth"
                   >
-                    github.com/mohdhamzakhan
+                    github.com/mohd-hamza-khan
                   </a>
                 </div>
               </div>
