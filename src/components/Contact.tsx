@@ -64,7 +64,7 @@ export function Contact() {
 
     try {
       const response = await fetch(
-        "https://freestyler.app.n8n.cloud/webhook-test/62344a26-127d-4ae5-a0fa-27c4bc282e62",
+        "https://freestyler.app.n8n.cloud/webhook/62344a26-127d-4ae5-a0fa-27c4bc282e62",
         {
           method: "POST",
           headers: {
