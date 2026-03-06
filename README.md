@@ -5,9 +5,7 @@
 
 📍 Aligarh, India  
 📧 mohdhamzacse@gmail.com | 📞 8445569020  
-[LinkedIn](https://www.linkedin.com/in/mohd-hamza-khan) | [GitHub](https://github.com/Mohd-Hamza-Khan) | [Portfolio](#)
-
-![Profile Banner](https://via.placeholder.com/800x200.png?text=Mohd+Hamza+Khan+Portfolio)<img width="1778" height="901" alt="image" src="https://github.com/user-attachments/assets/a70ab171-d754-45f2-af96-7142383d5616" />
+[LinkedIn](https://www.linkedin.com/in/mohd-hamza-khan) | [GitHub](https://github.com/Mohd-Hamza-Khan) | <img width="1778" height="901" alt="image" src="https://github.com/user-attachments/assets/a70ab171-d754-45f2-af96-7142383d5616" />
 
 
 ---
@@ -19,4 +17,4 @@
 
 ---
 
-> "Building the future with AI, one project at a time." – Mohd Hamza Khan
+"Building the future with AI, one project at a time." – Mohd Hamza Khan
