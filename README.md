@@ -1,37 +1,22 @@
 # Welcome to my portfolio project
 
-## Project info
+# Mohd Hamza Khan 🚀
+**AI Engineer | Full-Stack Developer | Problem Solver**
 
-**URL**: https://lovable.dev/projects/afecdac9-c6a7-4035-9e06-e1370c645515
+📍 Aligarh, India  
+📧 mohdhamzacse@gmail.com | 📞 8445569020  
+[LinkedIn](https://www.linkedin.com/in/mohd-hamza-khan) | [GitHub](https://github.com/Mohd-Hamza-Khan) | [Portfolio](#)
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes.
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone github.com/mohd-hamza-khan/hamzakhan-dev-folio.git
-
-# Step 2: Navigate to the project directory.
-cd hamzakhan-dev-folio
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+![Profile Banner](https://via.placeholder.com/800x200.png?text=Mohd+Hamza+Khan+Portfolio)<img width="1778" height="901" alt="image" src="https://github.com/user-attachments/assets/a70ab171-d754-45f2-af96-7142383d5616" />
 
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🌟 Achievements
+- 🏆 **Finalist**, Vibe Singularity Hackathon (RunAnywhere YC W26) — Built a **privacy-first Local AI Study Buddy** in 48 hours.  
+- 🎯 **Led a team** to the 2nd round of a National Hackathon.  
+- 📈 Increased user engagement by **25%** through UX improvements.  
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
+
+> "Building the future with AI, one project at a time." – Mohd Hamza Khan
