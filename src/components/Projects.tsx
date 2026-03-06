@@ -2,15 +2,21 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
+import projectRag from "@/assets/project-rag.jpg";
+import projectStudyBuddy from "@/assets/project-study-buddy.jpg";
+import projectEcom from "@/assets/project-ecom.jpg";
+import projectLinkedin from "@/assets/project-linkedin.jpg";
+import projectSecureFiles from "@/assets/project-secure-files.jpg";
+import projectFootball from "@/assets/project-football.jpg";
 
 const projects = [
   {
     title: "Local AI-Powered PDF QA System (RAG)",
-    description: [
-      "Built a local RAG-based PDF question-answering system using FAISS embeddings and Phi-3 Mini via Ollama, enabling fast semantic search with zero API cost."
-    ],
+    description:
+      "Built a local RAG-based PDF question-answering system using FAISS embeddings and Phi-3 Mini via Ollama, enabling fast semantic search with zero API cost.",
     tags: ["RAG", "Prompt Engineering", "LLM", "Vector Database", "LangChain"],
     github: "https://github.com/Mohd-Hamza-Khan/PDF-Question-Answering-System-RAG-",
+    image: projectRag,
   },
   {
     title: "AI Study Buddy",
@@ -18,13 +24,15 @@ const projects = [
       "Built via vibe coding: a privacy-first offline AI learning companion using @runanywhere/web, running fully in-browser with voice, vision, text, quizzes—no server or API.",
     tags: ["Llama3", "Claude Haiku 4.5", "GPT-4", "Claude Sonnet 3.5", "RunAnywhere"],
     github: "https://github.com/Mohd-Hamza-Khan/AI-Study-Buddy",
+    image: projectStudyBuddy,
   },
   {
     title: "Ecom – Laptop & Smartphone Store",
     description:
-      "Ecom – a feature-rich, visually appealing e-commerce web application built with Django! Whether you’re a tech enthusiast, a casual shopper, or a developer eager to see a real-world Django project in action.",
+      "Ecom – a feature-rich, visually appealing e-commerce web application built with Django! Whether you're a tech enthusiast, a casual shopper, or a developer eager to see a real-world Django project in action.",
     tags: ["Python", "Django", "HTML", "CSS", "JavaScript", "SQLite"],
     github: "https://github.com/Mohd-Hamza-Khan/Ecom",
+    image: projectEcom,
   },
   {
     title: "AI-Powered LinkedIn Content Automation (n8n Workflow)",
@@ -32,6 +40,7 @@ const projects = [
       "An end-to-end automated LinkedIn content generation system built with n8n, OpenAI, Tavily Search API, Google Sheets, and LinkedIn API.",
     tags: ["n8n", "OpenAI", "Tavily", "Google Sheets", "LinkedIn API"],
     github: "https://github.com/Mohd-Hamza-Khan/Automated-LinkedIn-Content-Generator",
+    image: projectLinkedin,
   },
   {
     title: "Secure File Sharing System On Cloud",
@@ -40,13 +49,15 @@ const projects = [
     tags: ["Python", "Django", "HTML", "CSS", "JavaScript", "SQLite"],
     github: "https://https://github.com/Mohd-Hamza-Khan/Secure-File-Sharing-System-On-Cloud",
     demo: "https://secure-file-sharing-system-on-cloud.onrender.com/",
+    image: projectSecureFiles,
   },
   {
     title: "Football Match Data Analysis",
     description:
-      "Analyzes and visualizes football match data using Python and StatsBomb Open Data, focusing on Spain Women’s team passes and shots. ⚽📊",
+      "Analyzes and visualizes football match data using Python and StatsBomb Open Data, focusing on Spain Women's team passes and shots. ⚽📊",
     tags: ["Python", "numpy", "pandas", "matplotlib", "mplsoccer", "StatsBomb"],
     github: "https://https://github.com/Mohd-Hamza-Khan/Football_Analyst_Project",
+    image: projectFootball,
   },
 ];
 
