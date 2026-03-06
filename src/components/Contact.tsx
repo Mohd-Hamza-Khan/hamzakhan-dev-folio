@@ -118,10 +118,10 @@ export function Contact() {
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
                   <a
-                    href="mailto:hamzacse@gmail.com"
+                    href="mailto:mohdhamzacse@gmail.com"
                     className="text-muted-foreground hover:text-accent transition-smooth"
                   >
-                    hamzacse@gmail.com
+                    mohdhamzacse@gmail.com
                   </a>
                 </div>
               </div>
@@ -159,7 +159,7 @@ export function Contact() {
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-accent transition-smooth"
                   >
-                    github.com/mohd-hamza-khan
+                    github.com/Mohd-Hamza-Khan
                   </a>
                 </div>
               </div>

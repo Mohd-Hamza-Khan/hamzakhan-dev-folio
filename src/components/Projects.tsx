@@ -5,52 +5,48 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "AI-Powered Sales Forecasting Platform",
-    description:
-      "Developed a machine learning platform that predicts sales trends with 95% accuracy using time series analysis and neural networks. Reduced forecasting errors by 40%.",
-    tags: ["Python", "TensorFlow", "React", "PostgreSQL", "Docker"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    title: "Local AI-Powered PDF QA System (RAG)",
+    description: [
+      "Built a local RAG-based PDF question-answering system using FAISS embeddings and Phi-3 Mini via Ollama, enabling fast semantic search with zero API cost."
+    ],
+    tags: ["RAG", "Prompt Engineering", "LLM", "Vector Database", "LangChain"],
+    github: "https://github.com/Mohd-Hamza-Khan/PDF-Question-Answering-System-RAG-",
   },
   {
-    title: "Real-Time Analytics Dashboard",
+    title: "AI Study Buddy",
     description:
-      "Built a comprehensive analytics dashboard for monitoring business KPIs with real-time data visualization. Processed 1M+ data points daily with sub-second latency.",
-    tags: ["Next.js", "Power BI", "MongoDB", "WebSocket", "D3.js"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+      "Built via vibe coding: a privacy-first offline AI learning companion using @runanywhere/web, running fully in-browser with voice, vision, text, quizzes—no server or API.",
+    tags: ["Llama3", "Claude Haiku 4.5", "GPT-4", "Claude Sonnet 3.5", "RunAnywhere"],
+    github: "https://github.com/Mohd-Hamza-Khan/AI-Study-Buddy",
   },
   {
-    title: "E-Commerce Platform with Recommendation Engine",
+    title: "Ecom – Laptop & Smartphone Store",
     description:
-      "Full-stack e-commerce solution with ML-based product recommendations. Increased conversion rates by 35% through personalized shopping experiences.",
-    tags: ["React", "Node.js", "Scikit-learn", "Redis", "AWS"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+      "Ecom – a feature-rich, visually appealing e-commerce web application built with Django! Whether you’re a tech enthusiast, a casual shopper, or a developer eager to see a real-world Django project in action.",
+    tags: ["Python", "Django", "HTML", "CSS", "JavaScript", "SQLite"],
+    github: "https://github.com/Mohd-Hamza-Khan/Ecom",
   },
   {
-    title: "NLP-Based Customer Support Chatbot",
+    title: "AI-Powered LinkedIn Content Automation (n8n Workflow)",
     description:
-      "Intelligent chatbot using natural language processing to handle customer inquiries. Automated 70% of support tickets, reducing response time from hours to seconds.",
-    tags: ["Python", "NLP", "PyTorch", "FastAPI", "React"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+      "An end-to-end automated LinkedIn content generation system built with n8n, OpenAI, Tavily Search API, Google Sheets, and LinkedIn API.",
+    tags: ["n8n", "OpenAI", "Tavily", "Google Sheets", "LinkedIn API"],
+    github: "https://github.com/Mohd-Hamza-Khan/Automated-LinkedIn-Content-Generator",
   },
   {
-    title: "Financial Data Pipeline & Analytics",
+    title: "Secure File Sharing System On Cloud",
     description:
-      "Engineered ETL pipeline processing 500GB+ financial data daily. Created automated reports saving 20 hours of manual work weekly.",
-    tags: ["Python", "Apache Airflow", "Pandas", "SQL", "Tableau"],
-    github: "https://github.com",
-    demo: null,
+      "Secure file system that encrypts uploads using Fernet, stores encrypted files with metadata, and enables controlled file listing and access. 🔐",
+    tags: ["Python", "Django", "HTML", "CSS", "JavaScript", "SQLite"],
+    github: "https://https://github.com/Mohd-Hamza-Khan/Secure-File-Sharing-System-On-Cloud",
+    demo: "https://secure-file-sharing-system-on-cloud.onrender.com/",
   },
   {
-    title: "Computer Vision Image Classification System",
+    title: "Football Match Data Analysis",
     description:
-      "Deep learning system for automated image classification and object detection. Achieved 98% accuracy on custom dataset with real-time processing capabilities.",
-    tags: ["PyTorch", "OpenCV", "Flask", "Docker", "AWS"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+      "Analyzes and visualizes football match data using Python and StatsBomb Open Data, focusing on Spain Women’s team passes and shots. ⚽📊",
+    tags: ["Python", "numpy", "pandas", "matplotlib", "mplsoccer", "StatsBomb"],
+    github: "https://https://github.com/Mohd-Hamza-Khan/Football_Analyst_Project",
   },
 ];
 

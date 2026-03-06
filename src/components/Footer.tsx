@@ -18,8 +18,8 @@ export function Footer() {
           <div>
             <h3 className="text-2xl font-bold mb-4 text-accent">MOHD HAMZA KHAN</h3>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Full-Stack Developer, Data Analyst, and ML Engineer passionate about
-              building innovative solutions that make a difference.
+              AI Engineer | Data Analyst | ML Engineer | Full-Stack Developer 
+              Passionate about building innovative solutions that make a difference.
             </p>
           </div>
 
@@ -41,12 +41,11 @@ export function Footer() {
           </div>
 
           {/* Connect */}
-          {/* Connect */}
           <div>
             <h4 className="font-semibold mb-4">Connect</h4>
             <div className="flex gap-3">
               <a
-                href="https://github.com/mohd-hamza-khan"
+                href="https://github.com/Mohd-Hamza-Khan"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -64,7 +63,7 @@ export function Footer() {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="mailto:hamzacse@gmial.com"
+                href="mailto:mohdhamzacse@gmial.com"
                 aria-label="Email"
                 className="inline-flex items-center justify-center p-2 rounded-md text-primary-foreground hover:text-accent hover:bg-primary-foreground/10 transition-smooth hover:scale-110"
               >

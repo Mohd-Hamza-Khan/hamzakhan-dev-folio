@@ -4,9 +4,9 @@ import { Card } from "@/components/ui/card";
 
 const highlights = [
   {
-    icon: Code2,
-    title: "Full-Stack Development",
-    description: "Building scalable web applications with modern frameworks and best practices",
+    icon: Brain,
+    title: "AI Engineering",
+    description: "Designing and implementing intelligent systems that leverage artificial intelligence for automated decision-making",
   },
   {
     icon: Database,
@@ -17,6 +17,11 @@ const highlights = [
     icon: Brain,
     title: "Machine Learning",
     description: "Developing intelligent systems that learn and adapt from data",
+  },
+  {
+    icon: Code2,
+    title: "Full-Stack Development",
+    description: "Building scalable web applications with modern frameworks and best practices",
   },
 ];
 
@@ -34,30 +39,29 @@ export function About() {
         <div className="max-w-4xl mx-auto">
           <div className="mb-12 text-center animate-fade-in-up">
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              I'm a passionate technologist with expertise spanning full-stack development,
-              data analytics, and machine learning engineering. With a strong foundation in
-              computer science and a problem-solving mindset, I specialize in creating
-              innovative solutions that bridge the gap between complex technical challenges
-              and user-friendly applications.
+              I'm an AI specialist and engineer passionate about developing intelligent systems that
+              solve real-world problems. Grounded in machine learning and full-stack development,
+              I focus on creating innovative, data-driven solutions that combine technical rigor with
+              user-centric design.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              My approach combines technical excellence with creative thinking, enabling me
-              to deliver high-quality solutions that make a real impact. Whether it's
-              architecting scalable systems, uncovering insights from data, or building
-              intelligent AI models, I'm committed to pushing the boundaries of what's possible.
+              My work is fueled by curiosity and creativity, enabling me to build scalable,
+              efficient applications that push the limits of technology. From designing neural
+              architectures to integrating seamless user experiences, I strive to deliver impactful
+              results.
             </p>
             <Button
               className="bg-accent hover:bg-accent/90 shadow-soft transition-smooth hover:scale-105"
               asChild
             >
-              <a href="#contact">
+              <a href="/Resume.pdf" aria-label="Download Resume" download>
                 <FileDown className="mr-2 h-4 w-4" />
-                Download CV
+                Resume
               </a>
             </Button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in">
             {highlights.map((highlight, index) => (
               <Card
                 key={index}

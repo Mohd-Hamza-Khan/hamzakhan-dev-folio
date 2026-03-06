@@ -3,26 +3,41 @@ import { Badge } from "@/components/ui/badge";
 
 const skillCategories = [
   {
+    title: "AI Engineer",
+    color: "bg-purple-500/10 text-purple-500 border-purple-500/20",
+    skills: [
+      "RAG",
+      "Prompt Engineering",
+      "LangChain",
+      "Agentic AI",
+      "LLM Orchestration",
+      "Python",
+      "SQL",
+      "MongoDB",
+      "Docker",
+      "REST APIs"
+    ],
+  },
+  {
     title: "Full-Stack Development",
     color: "bg-blue-500/10 text-blue-500 border-blue-500/20",
     skills: [
       "React",
       "Next.js",
       "TypeScript",
+      "Python",
+      "Django",
       "Node.js",
-      "Express",
       "MongoDB",
-      "PostgreSQL",
+      "SQLite3",
       "REST APIs",
-      "GraphQL",
       "Docker",
-      "AWS",
       "Git",
     ],
   },
   {
     title: "Data Analytics",
-    color: "bg-purple-500/10 text-purple-500 border-purple-500/20",
+    color: "bg-orange-500/10 text-orange-500 border-orange-500/20",
     skills: [
       "Python",
       "SQL",
@@ -31,11 +46,9 @@ const skillCategories = [
       "Matplotlib",
       "Seaborn",
       "Power BI",
-      "Tableau",
       "Excel",
       "Data Visualization",
       "Statistical Analysis",
-      "ETL Pipelines",
     ],
   },
   {
@@ -48,12 +61,9 @@ const skillCategories = [
       "NLP",
       "Computer Vision",
       "Deep Learning",
-      "Model Deployment",
       "Feature Engineering",
-      "MLOps",
       "Keras",
       "OpenCV",
-      "Jupyter",
     ],
   },
 ];
@@ -61,7 +71,7 @@ const skillCategories = [
 export function Skills() {
   return (
     <section id="skills" className="py-20 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">  
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gradient">
             Technical Skills
@@ -72,7 +82,7 @@ export function Skills() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {skillCategories.map((category, index) => (
             <Card
               key={index}

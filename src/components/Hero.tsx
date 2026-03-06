@@ -42,12 +42,12 @@ export const Hero: React.FC = () => {
           </h1>
 
           <p className="text-xl sm:text-2xl md:text-3xl text-white mb-6 font-light">
-            Full-Stack Developer | Data Analyst | ML Engineer
+            AI Engineer | Data Analyst | ML Engineer | Full-Stack Developer
           </p>
 
           <p className="text-base sm:text-lg text-foreground/80 max-w-2xl mx-auto mb-8 leading-relaxed">
             Transforming ideas into scalable solutions through innovative development,
-            data-driven insights, and cutting-edge machine learning applications.
+            data-driven insights, and modern AI and machine learning technologies.
           </p>
 
           {/* CTA Buttons */}
@@ -65,7 +65,7 @@ export const Hero: React.FC = () => {
               className="px-6 py-3 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 transition-smooth hover:scale-105"
               asChild
             >
-              <a href="/resume.pdf" aria-label="Download Resume" download>
+              <a href="/Resume.pdf" aria-label="Download Resume" download>
                 <FileDown className="mr-2 h-4 w-4" />
                 Download Resume
               </a>
@@ -79,7 +79,7 @@ export const Hero: React.FC = () => {
               asChild
             >
               <a
-                href="https://github.com/your-username"
+                href="https://github.com/Mohd-Hamza-Khan"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -92,7 +92,7 @@ export const Hero: React.FC = () => {
               asChild
             >
               <a
-                href="https://linkedin.com/in/your-profile"
+                href="https://linkedin.com/in/mohd-hamza-khan"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -104,7 +104,7 @@ export const Hero: React.FC = () => {
               className="text-primary-foreground hover:text-accent hover:bg-primary-foreground/10 transition-smooth hover:scale-110"
               asChild
             >
-              <a href="mailto:hamza@example.com" aria-label="Email">
+              <a href="mailto:mohdhamzacse@gmail.com" aria-label="Email">
                 <Mail className="h-5 w-5" />
               </a>
             </Button>

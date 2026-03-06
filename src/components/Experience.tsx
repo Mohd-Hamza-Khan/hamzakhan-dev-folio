@@ -4,56 +4,31 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    title: "Senior Full-Stack Developer",
-    company: "Tech Innovations Inc.",
-    period: "2023 - Present",
+    title: "AI Winter Intern",
+    company: "Mirai School of Technology",
+    period: "01/2025 - 02/2025",
     description:
-      "Lead development of enterprise-level web applications serving 100K+ users. Architected microservices infrastructure reducing deployment time by 60%.",
+      "India’s best AI-first undergraduate engineering experience for the AI era.",
     achievements: [
-      "Reduced API response time by 45% through optimization",
-      "Mentored team of 5 junior developers",
-      "Implemented CI/CD pipeline improving release frequency by 3x",
+      "Learning and applying AI automation and Generative AI workflows for real-world problem solving",
+      "Developed Retrieval-Augmented Generation (RAG) applications using embeddings and vector databases to generate context-aware responses.",
+      "Integrated LLM APIs (e.g., OpenAI) into production workflows with prompt optimization, token management, and hallucination mitigation.",
     ],
-    tags: ["React", "Node.js", "AWS", "Docker", "MongoDB"],
+    tags: ["AI Automation", "RAG", "Embeddings", "Vector Databases", "LLM APIs", "Prompt Engineering"],
   },
   {
-    title: "Data Analyst & ML Engineer",
-    company: "DataDrive Solutions",
-    period: "2021 - 2023",
+    title: "Web Development Intern",
+    company: "SafalUday Foundation",
+    period: "04/2025 - 07/2025",
     description:
-      "Developed predictive models and analytics solutions that drove $2M in cost savings. Built automated reporting systems processing 10TB+ data monthly.",
+      "A foundation focused on holistic education and development.",
     achievements: [
-      "Reduced data processing time by 40% using optimized SQL queries",
-      "Created ML models improving forecast accuracy by 35%",
-      "Designed interactive dashboards for C-suite executives",
+      "Developed responsive user interfaces using HTML, CSS, JavaScript, and Bootstrap.",
+      "Implemented backend logic with PHP for form handling, data validation, and database operations.",
+      "Integrated and tested RESTful APIs and third-party services.",
+      "Collaborated with team members in brainstorming sessions and agile meetings.",
     ],
-    tags: ["Python", "TensorFlow", "SQL", "Power BI", "Pandas"],
-  },
-  {
-    title: "Full-Stack Developer",
-    company: "StartupLab",
-    period: "2020 - 2021",
-    description:
-      "Built MVPs and production applications for early-stage startups. Collaborated with cross-functional teams to deliver 15+ successful projects.",
-    achievements: [
-      "Developed 8 full-stack applications from concept to deployment",
-      "Integrated third-party APIs reducing development time by 50%",
-      "Implemented responsive designs improving mobile engagement by 60%",
-    ],
-    tags: ["React", "Express", "PostgreSQL", "REST APIs", "Git"],
-  },
-  {
-    title: "Data Analytics Intern",
-    company: "FinanceMetrics Corp",
-    period: "2019 - 2020",
-    description:
-      "Analyzed financial datasets to identify trends and patterns. Created visualization dashboards for stakeholder reporting.",
-    achievements: [
-      "Automated monthly reporting saving 20 hours per week",
-      "Identified cost-saving opportunities worth $500K annually",
-      "Built Excel macros improving data processing efficiency by 30%",
-    ],
-    tags: ["Python", "Excel", "SQL", "Tableau", "Statistics"],
+    tags: ["PHP", "Laravel", "MySQL", "REST APIs","Code Deployment", "Agile Methodologies"],
   },
 ];
 
