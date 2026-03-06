@@ -79,7 +79,7 @@ export function Projects() {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="p-6 shadow-soft hover:shadow-medium transition-smooth hover:-translate-y-2 bg-card border-border flex flex-col animate-fade-in"
+              className="p-6 shadow-soft hover:shadow-medium transition-smooth hover:-translate-y-2 bg-card border-border flex flex-col animate-fade-in group overflow-hidden"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="relative h-44 -mx-6 -mt-6 mb-4 overflow-hidden rounded-t-lg">
