@@ -74,12 +74,12 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-primary-foreground/20 dark:border-accent/20 pt-8">
+        <div className="border-t border-primary-foreground/20 dark:border-[#4FD1C5]/20 pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-primary-foreground/60 text-sm">
+            <p className="text-primary-foreground/60 dark:text-[#94A3B8] text-sm">
               © {new Date().getFullYear()} Mohd Hamza Khan. All rights reserved.
             </p>
-            <p className="text-primary-foreground/60 text-sm flex items-center gap-1">
+            <p className="text-primary-foreground/60 dark:text-[#94A3B8] text-sm flex items-center gap-1">
               Built with <Heart className="h-4 w-4 text-accent fill-accent" /> using React & Tailwind CSS
             </p>
           </div>
