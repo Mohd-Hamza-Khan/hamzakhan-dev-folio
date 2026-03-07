@@ -42,7 +42,7 @@ export function Footer() {
 
           {/* Connect */}
           <div>
-            <h4 className="font-semibold mb-4 dark:text-accent/80">Connect</h4>
+            <h4 className="font-semibold mb-4 dark:text-[#4FD1C5]">Connect</h4>
             <div className="flex gap-3">
               <a
                 href="https://github.com/Mohd-Hamza-Khan"
