@@ -5,42 +5,46 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Linkedin, Github, Send, Loader2, X } from "lucide-react";
+import { Mail, Linkedin, Github, Send, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import emailjs from "@emailjs/browser";
 
 const contactSchema = z.object({
-  name: z.string().trim().min(1, "Name is required").max(100, "Name must be less than 100 characters"),
-  email: z.string().trim().email("Please enter a valid email").max(255, "Email must be less than 255 characters"),
-  mobile: z.string().trim().min(1, "Mobile number is required").max(20, "Mobile number must be less than 20 characters"),
-  query: z.string().trim().min(1, "Message is required").max(2000, "Message must be less than 2000 characters"),
+  name: z.string().trim().min(1, "Name is required").max(100),
+  email: z.string().trim().email("Please enter a valid email").max(255),
+  mobile: z.string().trim().min(1, "Mobile number is required").max(20),
+  query: z.string().trim().min(1, "Message is required").max(2000),
 });
 
 export function Contact() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     mobile: "",
     query: "",
   });
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [responseDialogOpen, setResponseDialogOpen] = useState(false);
-  const [webhookResponse, setWebhookResponse] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const [errors, setErrors] = useState<Record<string, string>>({});
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+
     if (errors[name]) {
-      setErrors((prev) => ({ ...prev, [name]: "" }));
+      setErrors((prev) => ({
+        ...prev,
+        [name]: "",
+      }));
     }
   };
 
@@ -49,13 +53,16 @@ export function Contact() {
     setErrors({});
 
     const result = contactSchema.safeParse(formData);
+
     if (!result.success) {
       const fieldErrors: Record<string, string> = {};
+
       result.error.errors.forEach((err) => {
         if (err.path[0]) {
           fieldErrors[err.path[0] as string] = err.message;
         }
       });
+
       setErrors(fieldErrors);
       return;
     }
@@ -63,39 +70,45 @@ export function Contact() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch(
-        "https://freestyler.app.n8n.cloud/webhook/62344a26-127d-4ae5-a0fa-27c4bc282e62",
+      await emailjs.send(
+        "mail_sent",
+        "sent_template",
         {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(result.data),
-        }
+          name: formData.name,
+          email: formData.email,
+          mobile: formData.mobile,
+          query: formData.query,
+        },
+        "0MC3rbyx2nyll-H1X"
       );
 
-      if (response.ok) {
-        const responseData = await response.text();
-        setWebhookResponse(responseData);
-        setResponseDialogOpen(true);
-        setFormData({ name: "", email: "", mobile: "", query: "" });
-      } else {
-        throw new Error("Failed to send message");
-      }
+      toast({
+        title: "Message Sent 🎉",
+        description: "Thank you! I will get back to you soon.",
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        mobile: "",
+        query: "",
+      });
+
     } catch (error) {
       toast({
         title: "Error",
-        description: "Failed to send message. Please try again later.",
+        description: "Failed to send message. Please try again.",
         variant: "destructive",
       });
-    } finally {
-      setIsSubmitting(false);
     }
+
+    setIsSubmitting(false);
   };
 
   return (
     <section id="contact" className="py-20 gradient-section">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gradient">
             Get In Touch
@@ -107,85 +120,74 @@ export function Contact() {
         </div>
 
         <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Contact Form */}
+
           <motion.form
+            onSubmit={handleSubmit}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            onSubmit={handleSubmit}
-            className="space-y-6"
           >
-            <Card className="p-8 shadow-soft bg-card border-border">
+            <Card className="p-8">
+
               <div className="space-y-6">
+
                 <div>
-                  <Label htmlFor="name">Full Name</Label>
+                  <Label>Full Name</Label>
                   <Input
-                    id="name"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className={`mt-1 ${errors.name ? "border-destructive" : ""}`}
+                    className={errors.name ? "mt-1 border-red-500" : ""}
                     placeholder="Your name"
                   />
                   {errors.name && (
-                    <p className="text-sm text-destructive mt-1">{errors.name}</p>
+                    <p className="text-sm mt-1 text-red-500">{errors.name}</p>
                   )}
                 </div>
 
                 <div>
-                  <Label htmlFor="email">Email Address</Label>
+                  <Label>Email</Label>
                   <Input
-                    id="email"
                     name="email"
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`mt-1 ${errors.email ? "border-destructive" : ""}`}
                     placeholder="your.email@example.com"
+                    className={errors.email ? "mt-1 border-red-500" : ""}
                   />
                   {errors.email && (
-                    <p className="text-sm text-destructive mt-1">{errors.email}</p>
+                    <p className="text-sm mt-1 text-red-500">{errors.email}</p>
                   )}
                 </div>
 
                 <div>
-                  <Label htmlFor="mobile">Mobile Number</Label>
+                  <Label>Mobile</Label>
                   <Input
-                    id="mobile"
                     name="mobile"
                     value={formData.mobile}
                     onChange={handleChange}
-                    className={`mt-1 ${errors.mobile ? "border-destructive" : ""}`}
-                    placeholder="+1 234 567 8900"
+                    placeholder="+1234 567 8900"
                   />
-                  {errors.mobile && (
-                    <p className="text-sm text-destructive mt-1">{errors.mobile}</p>
-                  )}
                 </div>
 
                 <div>
-                  <Label htmlFor="query">Your Message</Label>
+                  <Label>Message</Label>
                   <Textarea
-                    id="query"
                     name="query"
                     value={formData.query}
                     onChange={handleChange}
-                    className={`mt-1 min-h-[150px] ${errors.query ? "border-destructive" : ""}`}
                     placeholder="Tell me about your project or how I can help..."
+                    className={errors.query ? "mt-1 border-red-500 min-h-[150px]" : ""}
                   />
-                  {errors.query && (
-                    <p className="text-sm text-destructive mt-1">{errors.query}</p>
-                  )}
                 </div>
 
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-accent hover:bg-accent/90 transition-smooth hover:scale-105"
+                  className="w-full"
                 >
                   {isSubmitting ? (
                     <>
-                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      <Loader2 className="animate-spin mr-2 h-4 w-4" />
                       Sending...
                     </>
                   ) : (
@@ -195,7 +197,9 @@ export function Contact() {
                     </>
                   )}
                 </Button>
+
               </div>
+
             </Card>
           </motion.form>
 
@@ -264,30 +268,9 @@ export function Contact() {
               </p>
             </div>
           </div>
+
         </div>
       </div>
-
-      <Dialog open={responseDialogOpen} onOpenChange={setResponseDialogOpen}>
-        <DialogContent className="max-w-2xl max-h-[80vh]">
-          <DialogHeader>
-            <DialogTitle>Response from Server</DialogTitle>
-          </DialogHeader>
-          <ScrollArea className="max-h-[60vh] pr-4">
-            <pre className="text-sm text-foreground whitespace-pre-wrap break-words bg-muted p-4 rounded-lg">
-              {webhookResponse}
-            </pre>
-          </ScrollArea>
-          <div className="flex justify-end pt-4">
-            <Button
-              variant="outline"
-              onClick={() => setResponseDialogOpen(false)}
-            >
-              <X className="w-4 h-4 mr-2" />
-              Close
-            </Button>
-          </div>
-        </DialogContent>
-      </Dialog>
     </section>
   );
 }
