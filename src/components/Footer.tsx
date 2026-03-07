@@ -80,7 +80,7 @@ export function Footer() {
               © {new Date().getFullYear()} Mohd Hamza Khan. All rights reserved.
             </p>
             <p className="text-primary-foreground/60 dark:text-[#94A3B8] text-sm flex items-center gap-1">
-              Built with <Heart className="h-4 w-4 text-accent fill-accent" /> using React & Tailwind CSS
+              Built with <Heart className="h-4 w-4 text-accent dark:text-[#4FD1C5] fill-accent dark:fill-[#4FD1C5]" /> using React & Tailwind CSS
             </p>
           </div>
         </div>
