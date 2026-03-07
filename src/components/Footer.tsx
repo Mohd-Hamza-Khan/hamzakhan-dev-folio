@@ -31,7 +31,7 @@ export function Footer() {
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className="text-primary-foreground/80 hover:text-accent transition-smooth text-sm"
+                    className="text-primary-foreground/80 dark:text-[#D0F0F6]/80 hover:text-accent dark:hover:text-[#81E6D9] transition-smooth text-sm"
                   >
                     {item.name}
                   </a>
