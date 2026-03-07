@@ -74,7 +74,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-primary-foreground/20 pt-8">
+        <div className="border-t border-primary-foreground/20 dark:border-accent/20 pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/60 text-sm">
               © {new Date().getFullYear()} Mohd Hamza Khan. All rights reserved.
