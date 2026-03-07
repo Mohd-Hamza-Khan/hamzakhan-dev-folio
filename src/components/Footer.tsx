@@ -11,7 +11,7 @@ const navItems = [
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
+    <footer className="bg-primary text-primary-foreground py-12 dark:bg-gradient-to-br dark:from-[hsl(210,60%,6%)] dark:via-[hsl(210,55%,12%)] dark:to-[hsl(173,50%,15%)] dark:border-t dark:border-accent/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
