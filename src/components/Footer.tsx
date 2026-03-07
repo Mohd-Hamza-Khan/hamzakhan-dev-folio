@@ -16,8 +16,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-accent dark:text-accent dark:drop-shadow-[0_0_8px_hsl(173,80%,40%,0.4)]">MOHD HAMZA KHAN</h3>
-            <p className="text-primary-foreground/80 dark:text-primary-foreground/90 text-sm leading-relaxed">
+            <h3 className="text-2xl font-bold mb-4 text-accent dark:text-[#4FD1C5] dark:drop-shadow-[0_0_8px_rgba(79,209,197,0.5)]">MOHD HAMZA KHAN</h3>
+            <p className="text-primary-foreground/80 dark:text-[#D0F0F6]/90 text-sm leading-relaxed">
               AI Engineer | Data Analyst | ML Engineer | Full-Stack Developer 
               Passionate about building innovative solutions that make a difference.
             </p>
