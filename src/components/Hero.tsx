@@ -65,7 +65,7 @@ export const Hero: React.FC = () => {
               className="px-6 py-3 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 transition-smooth hover:scale-105"
               asChild
             >
-              <a href="/Resume.pdf" aria-label="Download Resume" download>
+              <a href="/resume.pdf" aria-label="Download Resume" download>
                 <FileDown className="mr-2 h-4 w-4" />
                 Download Resume
               </a>
