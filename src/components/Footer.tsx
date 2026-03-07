@@ -11,13 +11,13 @@ const navItems = [
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
+    <footer className="bg-primary text-primary-foreground py-12 dark:bg-gradient-to-br dark:from-[hsl(210,60%,6%)] dark:via-[hsl(210,55%,12%)] dark:to-[hsl(173,50%,15%)] dark:border-t dark:border-accent/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-accent">MOHD HAMZA KHAN</h3>
-            <p className="text-primary-foreground/80 text-sm leading-relaxed">
+            <h3 className="text-2xl font-bold mb-4 text-accent dark:text-accent dark:drop-shadow-[0_0_8px_hsl(173,80%,40%,0.4)]">MOHD HAMZA KHAN</h3>
+            <p className="text-primary-foreground/80 dark:text-primary-foreground/90 text-sm leading-relaxed">
               AI Engineer | Data Analyst | ML Engineer | Full-Stack Developer 
               Passionate about building innovative solutions that make a difference.
             </p>
@@ -25,7 +25,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div className="text-center">
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-semibold mb-4 dark:text-accent/80">Quick Links</h4>
             <ul className="space-y-2">
               {navItems.map((item) => (
                 <li key={item.name}>
@@ -42,7 +42,7 @@ export function Footer() {
 
           {/* Connect */}
           <div>
-            <h4 className="font-semibold mb-4">Connect</h4>
+            <h4 className="font-semibold mb-4 dark:text-accent/80">Connect</h4>
             <div className="flex gap-3">
               <a
                 href="https://github.com/Mohd-Hamza-Khan"
@@ -74,7 +74,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-primary-foreground/20 pt-8">
+        <div className="border-t border-primary-foreground/20 dark:border-accent/20 pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/60 text-sm">
               © {new Date().getFullYear()} Mohd Hamza Khan. All rights reserved.
