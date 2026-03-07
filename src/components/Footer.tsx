@@ -49,7 +49,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="inline-flex items-center justify-center p-2 rounded-md text-primary-foreground hover:text-accent hover:bg-primary-foreground/10 transition-smooth hover:scale-110"
+                className="inline-flex items-center justify-center p-2 rounded-md text-primary-foreground dark:text-[#4FD1C5] hover:text-accent dark:hover:text-[#81E6D9] hover:bg-primary-foreground/10 transition-smooth hover:scale-110"
               >
                 <Github className="h-5 w-5" />
               </a>
