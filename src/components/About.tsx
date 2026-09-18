@@ -54,7 +54,7 @@ export function About() {
               className="bg-accent hover:bg-accent/90 shadow-soft transition-smooth hover:scale-105"
               asChild
             >
-              <a href="/resume.pdf" aria-label="Download Resume" download>
+              <a href="https://drive.google.com/file/d/1lJMU9Zi3USBC3SwrwbsGL-VTE0i7W_Ld/view?usp=sharing" aria-label="Download Resume" download>
                 <FileDown className="mr-2 h-4 w-4" />
                 Resume
               </a>
