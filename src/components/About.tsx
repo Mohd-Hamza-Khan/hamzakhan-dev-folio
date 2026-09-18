@@ -5,22 +5,22 @@ import { Card } from "@/components/ui/card";
 const highlights = [
   {
     icon: Brain,
-    title: "AI Engineering",
+    title: "AI Engineer",
     description: "Designing and implementing intelligent systems that leverage artificial intelligence for automated decision-making",
   },
   {
     icon: Database,
-    title: "Data Analytics",
-    description: "Transforming raw data into actionable insights using advanced analytics",
-  },
-  {
-    icon: Brain,
-    title: "Machine Learning",
-    description: "Developing intelligent systems that learn and adapt from data",
+    title: "GenAI Engineer",
+    description: "Building generative AI systems with RAG, agents, and LLM integration",
   },
   {
     icon: Code2,
-    title: "Full-Stack Development",
+    title: "Backend Engineer",
+    description: "Building scalable APIs and backend services with Python, Django, and FastAPI",
+  },
+  {
+    icon: Code2,
+    title: "Full-Stack Developer",
     description: "Building scalable web applications with modern frameworks and best practices",
   },
 ];
