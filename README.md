@@ -6,7 +6,7 @@
 📍 Aligarh, India  
 📧 mohdhamzacse@gmail.com | 📞 8445569020  
 
-🌐 **Portfolio:** https://hamzakhan-dev-folio.lovable.app/  
+🌐 **Portfolio:** https://hamzakhan-dev-folio.vercel.app/  
 
 🔗 **Connect with me:**  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Mohd%20Hamza%20Khan-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohd-hamza-khan)  

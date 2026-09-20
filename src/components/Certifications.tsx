@@ -49,15 +49,24 @@ export function Certifications() {
               className="overflow-hidden shadow-soft hover:shadow-medium transition-smooth group bg-card border-border"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative h-48 -mx-6 -mt-6 mb-4 overflow-hidden rounded-t-lg">
+              <div
+                className="relative h-48 -mx-6 -mt-6 mb-4 overflow-hidden rounded-t-lg cursor-pointer"
+                onClick={() => window.open(cert.image.replace("&sz=w1000", "&sz=w2000"), "_blank")}
+              >
                 <img
                   src={cert.image}
                   alt={cert.name}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  style={{ objectPosition: "center 70%" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="bg-black/50 rounded-full p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-maximize"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+                  </div>
+                </div>
               </div>
-              <CardContent className="p-4">
+              <CardContent className="p-4 text-center">
                 <h3 className="text-lg font-semibold">{cert.name}</h3>
               </CardContent>
             </Card>
