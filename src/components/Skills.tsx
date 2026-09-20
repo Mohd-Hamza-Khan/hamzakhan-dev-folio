@@ -6,20 +6,54 @@ const skillCategories = [
     title: "AI Engineer",
     color: "bg-purple-500/10 text-purple-500 border-purple-500/20",
     skills: [
-      "RAG",
-      "Prompt Engineering",
-      "LangChain",
-      "Agentic AI",
-      "LLM Orchestration",
       "Python",
+      "Machine Learning",
+      "Deep Learning",
+      "TensorFlow",
+      "PyTorch",
+      "NLP",
+      "Computer Vision",
+      "LLMs",
+      "RAG",
+      "MLOps"
+    ],
+
+  },
+  {
+    title: "GenAI Engineer",
+    color: "bg-orange-500/10 text-orange-500 border-orange-500/20",
+    skills: [
+      "Python",
+      "LLM Fundamentals",
+      "Prompt Engineering",
+      "RAG",
+      "AI Agents",
+      "LLM APIs",
+      "Vector Databases",
+      "LangChain",
+      "Fine-Tuning",
+      "AI Evaluation"
+    ],
+
+  },
+  {
+    title: "Backend Engineer",
+    color: "bg-green-500/10 text-green-500 border-green-500/20",
+    skills: [
+      "Python",
+      "Django",
+      "Node.js",
+      "REST APIs",
       "SQL",
       "MongoDB",
       "Docker",
-      "REST APIs"
+      "Git",
+      "SQLite3",
+      "FastAPI"
     ],
   },
   {
-    title: "Full-Stack Development",
+    title: "Full-Stack Developer",
     color: "bg-blue-500/10 text-blue-500 border-blue-500/20",
     skills: [
       "React",
@@ -32,38 +66,7 @@ const skillCategories = [
       "SQLite3",
       "REST APIs",
       "Docker",
-      "Git",
-    ],
-  },
-  {
-    title: "Data Analytics",
-    color: "bg-orange-500/10 text-orange-500 border-orange-500/20",
-    skills: [
-      "Python",
-      "SQL",
-      "Pandas",
-      "NumPy",
-      "Matplotlib",
-      "Seaborn",
-      "Power BI",
-      "Excel",
-      "Data Visualization",
-      "Statistical Analysis",
-    ],
-  },
-  {
-    title: "Machine Learning",
-    color: "bg-green-500/10 text-green-500 border-green-500/20",
-    skills: [
-      "Scikit-learn",
-      "TensorFlow",
-      "PyTorch",
-      "NLP",
-      "Computer Vision",
-      "Deep Learning",
-      "Feature Engineering",
-      "Keras",
-      "OpenCV",
+      "Git"
     ],
   },
 ];
@@ -71,7 +74,7 @@ const skillCategories = [
 export function Skills() {
   return (
     <section id="skills" className="py-20 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">  
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gradient">
             Technical Skills

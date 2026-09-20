@@ -11,6 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
+bun.lock
+bun.lockb
+resume.pdf
+CLAUDE.md
 
 # Editor directories and files
 .vscode/*

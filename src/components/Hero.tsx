@@ -42,7 +42,7 @@ export const Hero: React.FC = () => {
           </h1>
 
           <p className="text-xl sm:text-2xl md:text-3xl text-white mb-6 font-light">
-            AI Engineer | Data Analyst | ML Engineer | Full-Stack Developer
+            AI Engineer | GenAI Engineer | Backend Engineer | Full-Stack Developer
           </p>
 
           <p className="text-base sm:text-lg text-foreground/80 max-w-2xl mx-auto mb-8 leading-relaxed">
@@ -65,7 +65,7 @@ export const Hero: React.FC = () => {
               className="px-6 py-3 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 transition-smooth hover:scale-105"
               asChild
             >
-              <a href="/resume.pdf" aria-label="Download Resume" download>
+              <a href="https://drive.google.com/file/d/1lJMU9Zi3USBC3SwrwbsGL-VTE0i7W_Ld/view?usp=sharing" aria-label="Download Resume" download>
                 <FileDown className="mr-2 h-4 w-4" />
                 Download Resume
               </a>
