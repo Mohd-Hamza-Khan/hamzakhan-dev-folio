@@ -97,8 +97,7 @@ export function Projects() {
                 {project.tags.map((tag, tagIndex) => (
                   <Badge
                     key={tagIndex}
-                    className="text-xs"
-                  >
+                    className="text-xs dark:bg-slate-500 hover:bg-accent dark:hover:bg-accent/80 transition-smooth cursor-default">
                     {tag}
                   </Badge>
                 ))}
