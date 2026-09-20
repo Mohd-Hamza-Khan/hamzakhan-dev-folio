@@ -4,23 +4,27 @@ import { CardContent } from "@/components/ui/card";
 const certifications = [
   {
     name: "Vibe With Singularity",
-    image: "https://drive.google.com/uc?export=view&id=1cWqo9eGC1iawOmpt-JWR1-7Y0dR3KToK",
+    image: "https://drive.google.com/thumbnail?id=1cWqo9eGC1iawOmpt-JWR1-7Y0dR3KToK&sz=w1000",
   },
   {
     name: "AI/ML Hackathon",
-    image: "https://drive.google.com/uc?export=view&id=12gwHkUY583hhFivfOSA6ST7upjGVgqeX",
+    image: "https://drive.google.com/thumbnail?id=12gwHkUY583hhFivfOSA6ST7upjGVgqeX&sz=w1000",
   },
   {
     name: "Web Development Intern",
-    image: "https://drive.google.com/uc?export=view&id=1d8fV2BZvuYG8Y0m9lfgrWBev5FtS-vEr",
+    image: "https://drive.google.com/thumbnail?id=1d8fV2BZvuYG8Y0m9lfgrWBev5FtS-vEr&sz=w1000",
   },
   {
     name: "Data Analytics in Python",
-    image: "https://drive.google.com/uc?export=view&id=1ylezngvqWPcw-jQ2Yajo6hB1cxrfEl4C",
+    image: "https://drive.google.com/thumbnail?id=1ylezngvqWPcw-jQ2Yajo6hB1cxrfEl4C&sz=w1000",
   },
   {
     name: "Postman API Fundamentals Student Expert",
-    image: "https://drive.google.com/uc?export=view&id=1BZhimP7rlA6jeFB0q0vf45Jls-yI8HQB",
+    image: "https://drive.google.com/thumbnail?id=1BZhimP7rlA6jeFB0q0vf45Jls-yI8HQB&sz=w1000",
+  },
+  {
+    name: "Data Science Methodology",
+    image: "https://drive.google.com/thumbnail?id=1bIIMOmwXxgMjb6Pr_vtfqJNWmfWAXtU2&sz=w1000",
   },
 ];
 
