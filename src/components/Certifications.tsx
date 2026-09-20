@@ -3,24 +3,24 @@ import { CardContent } from "@/components/ui/card";
 
 const certifications = [
   {
-    name: "AWS Certified Solutions Architect",
-    image: "/certs/aws-certified.png",
+    name: "Vibe With Singularity",
+    image: "https://drive.google.com/uc?export=view&id=1cWqo9eGC1iawOmpt-JWR1-7Y0dR3KToK",
   },
   {
-    name: "Google Professional Cloud Developer",
-    image: "/certs/gcp-professional.png",
+    name: "AI/ML Hackathon",
+    image: "https://drive.google.com/uc?export=view&id=12gwHkUY583hhFivfOSA6ST7upjGVgqeX",
   },
   {
-    name: "Microsoft Azure Fundamentals",
-    image: "/certs/azure-fundamentals.png",
+    name: "Web Development Intern",
+    image: "https://drive.google.com/uc?export=view&id=1d8fV2BZvuYG8Y0m9lfgrWBev5FtS-vEr",
   },
   {
-    name: "Certified Kubernetes Administrator (CKA)",
-    image: "/certs/cka.png",
+    name: "Data Analytics in Python",
+    image: "https://drive.google.com/uc?export=view&id=1ylezngvqWPcw-jQ2Yajo6hB1cxrfEl4C",
   },
   {
-    name: "React Developer Certificate",
-    image: "/certs/react-certified.png",
+    name: "Postman API Fundamentals Student Expert",
+    image: "https://drive.google.com/uc?export=view&id=1BZhimP7rlA6jeFB0q0vf45Jls-yI8HQB",
   },
 ];
 
