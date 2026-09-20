@@ -22,6 +22,10 @@ const certifications = [
     name: "Postman API Fundamentals Student Expert",
     image: "https://drive.google.com/uc?export=view&id=1BZhimP7rlA6jeFB0q0vf45Jls-yI8HQB",
   },
+  {
+    name: "Data Science Methodology",
+    image: "https://drive.google.com/uc?export=view&id=1bIIMOmwXxgMjb6Pr_vtfqJNWmfWAXtU2",
+  },
 ];
 
 export function Certifications() {
