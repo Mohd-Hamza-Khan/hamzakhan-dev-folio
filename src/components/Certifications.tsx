@@ -51,7 +51,10 @@ export function Certifications() {
             >
               <div
                 className="relative h-48 -mx-6 -mt-6 mb-4 overflow-hidden rounded-t-lg cursor-pointer"
-                onClick={() => window.open(cert.image.replace("&sz=w1000", "&sz=w2000"), "_blank")}
+                onClick={() => {
+                  const id = cert.image.match(/[?&]id=([^&]+)/)?.[1];
+                  if (id) window.open(`https://drive.google.com/file/d/${id}/preview`, "_blank");
+                }}
               >
                 <img
                   src={cert.image}
